@@ -4,35 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script>
   tailwind.config = {
     theme: {
       extend: {
         colors: {
           blackBg: '#1f1f1f',
-          textwhite: '#fefdfe',
-
+          textwhite: '#fefdfe'
         }
       }
     }
   }
-</script>
-
+  </script>
 </head>
-<body class=" bg-[#1f1f1f] flex flex-col min-h-screen ">
-  <main class="flex-1  px-5 py-5">
-    <button class=""><img src="images/add.png" alt="" class="w-16"></button>
+<body class="bg-[#1f1f1f] min-h-screen flex flex-col lg:flex-row">
+
+  <nav class="fixed lg:sticky bottom-0 lg:top-0 left-0 z-50
+              flex lg:flex-col justify-center items-center
+              w-full lg:w-24
+              h-20 lg:h-screen
+              bg-[#1f1f1f]/95 backdrop-blur-md
+              border-t-2 lg:border-t-0 lg:border-r-2 border-gray-700
+              gap-10 lg:gap-12">
+
+    <a href="abstract.html">
+      <img src="images/abstract3.png" alt="" class="w-12 lg:w-15 mx-8 lg:mx-0 transition-transform duration-200 hover:scale-125">
+    </a>
+    <a href="index.html">
+      <img src="images/plan1.png" alt="" class="w-12 lg:w-15 mx-8 lg:mx-0 transition-transform duration-200 hover:scale-125">
+    </a>
+    <a href="profile.html">
+      <img src="images/user1.png" alt="" class="w-12 lg:w-15 mx-8 lg:mx-0 transition-transform duration-200 hover:scale-125">
+    </a>
+  </nav>
+
+  <main class="flex-1   lg:pt-8 px-5 py-5">
+    <button class="">
+      <img src="images/add.png" alt="" class="w-16 transition-transform duration-200 hover:scale-125">
+    </button>
   </main>
 
-
-
-
-  <footer class="flex justify-between items-start border-2 border-black px-5 py-2">
-    <a href="abstract.html"><img src="images/abstract1.png" alt="" class="w-15 transition-transform duration-200 hover:scale-115"></a>
-    <a href="index.html"><img src="images/plan1.png" alt="" class="w-15 transition-transform duration-200 hover:scale-115"></a>
-    <a href="profile.html"><img src="images/user1.png" alt="" class="w-15 transition-transform duration-200 hover:scale-115"></a>
-    </div>
-  </footer>
 </body>
 </html>
