@@ -43,7 +43,180 @@
     <button class="">
       <img src="images/add.png" alt="" class="w-16 transition-transform duration-200 hover:scale-125">
     </button>
-  </main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- МЕНЮ -->
+  <!-- Опишите тему которую вы хотите изучить? -->
+    <div class="flex justify-center flex-col gap-6 border-2 text-center text-lg font-medium  border-gray-700 text-[#fefdfe] mx-5 my-15 px-3 py-3">
+    <div class="">
+      <p class="pb-2 text-center">Опишите тему которую вы хотите изучить?</p>
+      <textarea name="" id="" class="w-full max-w-none resize-none 
+           bg-[#1f1f1f] text-[#fefdfe] 
+           border-2 border-gray-700 
+           rounded-xl 
+           px-4 py-4 
+           text-base 
+           duration-300 hover:bg-gray-800
+           focus:outline-none focus:border-gray-500 
+           transition-colors duration-200
+           min-h-16  
+           focus:min-h-48
+           lg:min-h-40"
+    rows="1"></textarea>
+    </div>
+
+
+
+
+
+
+    <!-- Сколько дней желаете получать уведомления? -->
+    <div class="flex flex-col items-center gap-3">
+      <p class="text-center">Сколько дней желаете получать уведомления?</p>
+      <input type="number"
+       class="w-16 text-center bg-[#1f1f1f textfefdfe 
+              border-2 border-gray-700 rounded-xl 
+              px-2 py-3 text-xl font-bold
+              duration-300 hover:bg-gray-800
+              focus:outline-none focus:border-gray-500
+              [appearance:textfield] 
+              [&::-webkit-inner-spin-button]:appearance-none 
+              [&::-webkit-outer-spin-button { appearance: none; margin: 0; }">
+    </div>
+
+
+
+
+    <!-- Сколько раз в день желаете получать сообщение? -->
+    <div class="flex flex-col items-center gap-3">
+      <p>Сколько раз в день желаете получать сообщение?</p>
+      <input class="w-16 text-center bg-[#1f1f1f textfefdfe 
+              border-2 border-gray-700 rounded-xl 
+              px-2 py-3 text-xl font-bold
+              duration-300 hover:bg-gray-800
+              focus:outline-none focus:border-gray-500
+              [appearance:textfield] 
+              [&::-webkit-inner-spin-button]:appearance-none 
+              [&::-webkit-outer-spin-button { appearance: none; margin: 0; }">
+    </div>
+
+
+
+
+
+    <!-- Когда отправлять уведомления? -->
+   <div class="flex flex-col gap-8 text-white">
+
+  <p class="text-center text-lg font-medium">
+    Когда отправлять уведомления?
+  </p>
+
+
+
+
+<!-- Вариант 1 -->
+  <div class="space-y-6">
+     <div class="flex flex-col items-center gap-3">
+    <label class="flex items-start gap-4 cursor-pointer ">
+      <input type="radio" name="schedule" value="fixed" 
+             class="w-6 h-6 mt-1 text-green-500 focus:ring-green-500">
+      <div>
+        <p class="font-medium">В определённое время</p>
+        <p class="text-sm text-gray-400">Например, каждый день в 9:00 утра</p>
+      </div>
+    </label>
+</div>
+    <!-- Вариант 2 -->
+     <div class="flex flex-col items-center gap-3">
+    <label class="flex items-start gap-4 cursor-pointer">
+      <input type="radio" name="schedule" value="auto" 
+             class="w-6 h-6 mt-1 text-blue-500 focus:ring-blue-500">
+      <div>
+        <p class="font-medium">Распределить на весь день автоматически</p>
+        <p class="text-sm text-gray-400">Ночью сообщения приходить не будут</p>
+      </div>
+    </label>
+</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- Сколько хотите проверочных в день? -->
+  <div >
+    <p>Сколько хотите проверочных в день?</p>
+    <input class="w-16 text-center bg-[#1f1f1f textfefdfe 
+              border-2 border-gray-700 rounded-xl 
+              px-2 py-3 text-xl font-bold
+              duration-300 hover:bg-gray-800
+              focus:outline-none focus:border-gray-500
+              [appearance:textfield] 
+              [&::-webkit-inner-spin-button]:appearance-none 
+              [&::-webkit-outer-spin-button { appearance: none; margin: 0; }">
+  </div>
+
+
+
+
+
+  <!-- Выберете уровень сложности (Вы будете получать материал в зависимости от вашего уровня знаний) -->
+  <div class="text-white">
+
+  <p class="text-center mb-8 text-lg">
+    Выберите уровень сложности<br>
+    <span class="text-sm text-gray-400">
+      Вы будете получать материал в зависимости от вашего уровня знаний
+    </span>
+  </p>
+
+
+  <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+
+    <!-- Новичек -->
+    <label class="flex items-center gap-3 cursor-pointer  px-6 py-4 rounded-xl transition">
+      <input type="radio" name="level" value="beginner" 
+             class="w-6 h-6 text-green-500 focus:ring-green-500">
+      <span class="font-medium text-lg">Новичек</span>
+    </label>
+
+    <!-- Среднячек -->
+    <label class="flex items-center gap-3 cursor-pointer  px-6 py-4 rounded-xl transition">
+      <input type="radio" name="level" value="intermediate" 
+             class="w-6 h-6 text-yellow-500 focus:ring-yellow-500">
+      <span class="font-medium text-lg">Среднячек</span>
+    </label>
+
+    <!-- Профичек -->
+    <label class="flex items-center gap-3 cursor-pointer  px-6 py-4 rounded-xl transition">
+      <input type="radio" name="level" value="pro" 
+             class="w-6 h-6 text-purple-500 focus:ring-purple-500">
+      <span class="font-medium text-lg">Профичек</span>
+    </label>
+
+  </div>
+  <div class="text-center text-lg font-medium">
+  <button class="border-2 border-gray-700 rounded-xl py-3 px-10   hover:bg-gray-800 ">Сохранить</button>
+  </div>
+</div>
+
+  </main>
+  
 </body>
 </html>
